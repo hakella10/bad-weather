@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "threshold",
+    "type": "java.lang.String",
+    "description": "Randomness Threshold"
+  },
+  {
+    "name": "range",
+    "type": "java.lang.String",
+    "description": "Randomness Range"
+  }
+]}
