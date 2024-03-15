@@ -8,8 +8,8 @@
 		<version>3.2.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>ai</artifactId>
+	<groupId>com.example.ai</groupId>
+	<artifactId>bad-weather</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>BadWeather</name>
 	<description>Sample BadWeather project for Spring Boot</description>
@@ -25,6 +25,11 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.2.0</version>
 		</dependency>
 	</dependencies>
 	<build>

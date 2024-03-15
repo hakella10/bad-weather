@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import com.example.ai.model.GreetingRequest;
 import com.example.ai.model.GreetingResponse;
 
+import io.swagger.v3.oas.annotations.Operation;
+
 @RestController
 public class BadWeatherController {
     
@@ -28,6 +30,7 @@ public class BadWeatherController {
     @Value("${threshold}")
     private String threshold;
 
+    @Operation(summary = "Get Hello Message - Always TRUE")
     @GetMapping("/hello")
     public ResponseEntity<GreetingResponse> sayHello(@RequestParam(required = false) String user ) {
         String msg = "Hello, ";
@@ -40,9 +43,9 @@ public class BadWeatherController {
         }
 
         return new ResponseEntity<>(GreetingResponse.builder().message(msg).build(), HttpStatus.OK);
-        
     }
 
+    @Operation(summary = "Generate Greeting Message - Always TRUE")
     @PostMapping("/greet")
     public HttpEntity<GreetingResponse> greetUser(@RequestBody GreetingRequest request) {
         
@@ -62,6 +65,7 @@ public class BadWeatherController {
         return new ResponseEntity<>(GreetingResponse.builder().message(msg.toString()).build(), HttpStatus.OK);
     }
     
+    @Operation(summary = "Generate How Are You Message - Randomly TRUE")
     @PostMapping("/howru")
     public HttpEntity<GreetingResponse> howAreYou(@RequestBody GreetingRequest request) {
         
