@@ -23,6 +23,7 @@ public class BadWeatherController {
     
     private final Logger LOGGER = LogManager.getLogger(this.getClass());
     private final String GOOD_MORNING = "Good Morning !";
+    private final String BAD_MORNING  = "Bad Morning !";
    
     @Value("${range}")
     private String range;
@@ -74,13 +75,9 @@ public class BadWeatherController {
         }
 
         StringBuilder msg = new StringBuilder();
-        if ("".equals(request.getUser().trim())) {
-            msg.append(this.GOOD_MORNING);
-        }
-        else{
+        if (!"".equals(request.getUser().trim())) {
             msg.append(request.getUser());
             msg.append(",");
-            msg.append(this.GOOD_MORNING);
         }
 
         try{
@@ -90,6 +87,7 @@ public class BadWeatherController {
 
             if ( (Math.random()*intRange) < intThreshold ) {
                 LOGGER.info("Randomness is less than threshold");
+                msg.append(this.GOOD_MORNING);
                 msg.append("I am fine. Thank you.");
                 return new ResponseEntity<>(GreetingResponse.builder().message(msg.toString()).build(), HttpStatus.OK);
             }
@@ -104,6 +102,7 @@ public class BadWeatherController {
         }
         catch(RuntimeException re){
             LOGGER.error(re);
+            msg.append(this.BAD_MORNING);
             msg.append(re.getMessage());
             return new ResponseEntity<>(GreetingResponse.builder().message(msg.toString()).build(), HttpStatus.EXPECTATION_FAILED);
         }
