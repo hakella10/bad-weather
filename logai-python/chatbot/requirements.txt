@@ -1,0 +1,14 @@
+gradio
+motor
+pymongo
+transformers
+llama-index-core
+llama-index-readers-file
+llama-index-readers-github
+llama-index-embeddings-huggingface
+llama-index-embeddings-instructor
+llama-index-storage-kvstore-mongodb
+llama-index-storage-docstore-mongodb
+llama-index-vector-stores-mongodb
+llama-index-storage-index-store-mongodb
+llama-index-llms-ollama

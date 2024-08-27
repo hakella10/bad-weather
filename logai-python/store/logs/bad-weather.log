@@ -1,0 +1,38 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2024-03-18T12:27:12.593+05:30  INFO 24084 --- [           main] com.example.ai.BadWeatherApplication     : Starting BadWeatherApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 24084 (D:\Local\vscode\poc\bad-weather\target\bad-weather-0.0.1-SNAPSHOT.jar started by HariAkella in D:\Local\vscode\poc\bad-weather\target)
+2024-03-18T12:27:12.593+05:30  INFO 24084 --- [           main] com.example.ai.BadWeatherApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-03-18T12:27:13.766+05:30  INFO 24084 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-03-18T12:27:13.782+05:30  INFO 24084 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T12:27:13.782+05:30  INFO 24084 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-03-18T12:27:13.819+05:30  INFO 24084 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-18T12:27:13.819+05:30  INFO 24084 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1136 ms
+2024-03-18T12:27:14.348+05:30  INFO 24084 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2024-03-18T12:27:14.363+05:30  INFO 24084 --- [           main] com.example.ai.BadWeatherApplication     : Started BadWeatherApplication in 2.201 seconds (process running for 2.56)
+2024-03-18T12:27:39.733+05:30  INFO 24084 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-18T12:27:39.733+05:30  INFO 24084 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-18T12:27:39.733+05:30  INFO 24084 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-18T12:27:40.116+05:30  INFO 24084 --- [nio-8081-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 160 ms
+2024-03-18T12:27:55.737+05:30  INFO 24084 --- [io-8081-exec-10] c.e.ai.controller.BadWeatherController   : Randomness is more than threshold
+2024-03-18T12:27:55.737+05:30 ERROR 24084 --- [io-8081-exec-10] c.e.ai.controller.BadWeatherController   : java.lang.RuntimeException: Sorry, Weather is bad !
+2024-03-18T12:30:09.342+05:30  INFO 24084 --- [nio-8081-exec-3] c.e.ai.controller.BadWeatherController   : Randomness is less than threshold
+2024-03-18T12:30:20.357+05:30  INFO 24084 --- [nio-8081-exec-9] c.e.ai.controller.BadWeatherController   : Randomness is more than threshold
+2024-03-18T12:30:20.357+05:30 ERROR 24084 --- [nio-8081-exec-9] c.e.ai.controller.BadWeatherController   : java.lang.RuntimeException: Sorry, Weather is bad !
+2024-03-18T12:30:28.823+05:30  INFO 24084 --- [nio-8081-exec-1] c.e.ai.controller.BadWeatherController   : Randomness is more than threshold
+2024-03-18T12:30:28.823+05:30 ERROR 24084 --- [nio-8081-exec-1] c.e.ai.controller.BadWeatherController   : java.lang.RuntimeException: Sorry, Weather is bad !
+2024-03-18T12:30:46.511+05:30  INFO 24084 --- [nio-8081-exec-2] c.e.ai.controller.BadWeatherController   : Randomness is more than threshold
+2024-03-18T12:30:46.511+05:30 ERROR 24084 --- [nio-8081-exec-2] c.e.ai.controller.BadWeatherController   : java.lang.RuntimeException: Sorry, Weather is bad !
+2024-03-18T12:31:02.995+05:30  INFO 24084 --- [nio-8081-exec-7] c.e.ai.controller.BadWeatherController   : Randomness is more than threshold
+2024-03-18T12:31:02.995+05:30 ERROR 24084 --- [nio-8081-exec-7] c.e.ai.controller.BadWeatherController   : java.lang.RuntimeException: Sorry, Weather is bad !
+2024-03-18T12:31:13.313+05:30  INFO 24084 --- [nio-8081-exec-6] c.e.ai.controller.BadWeatherController   : Randomness is more than threshold
+2024-03-18T12:31:13.313+05:30 ERROR 24084 --- [nio-8081-exec-6] c.e.ai.controller.BadWeatherController   : java.lang.RuntimeException: Sorry, Weather is bad !
+2024-03-18T12:31:22.799+05:30  INFO 24084 --- [nio-8081-exec-4] c.e.ai.controller.BadWeatherController   : Randomness is more than threshold
+2024-03-18T12:31:22.799+05:30 ERROR 24084 --- [nio-8081-exec-4] c.e.ai.controller.BadWeatherController   : java.lang.RuntimeException: Sorry, Weather is bad !
+2024-03-18T12:31:27.879+05:30  INFO 24084 --- [nio-8081-exec-5] c.e.ai.controller.BadWeatherController   : Randomness is less than threshold
